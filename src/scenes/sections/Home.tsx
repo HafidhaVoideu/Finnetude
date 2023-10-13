@@ -40,7 +40,7 @@ const Home = () => {
           </button>
         </div>
 
-        <h2 className="   max-w-2xl   font-TLogo font-bold  text-md sm:text-xl  md:text-2xl  mt-12 ">
+        <h2 className="   max-w-2xl   font-TLogo font-bold  text-md sm:text-xl  md:text-2xl  mt-4 ">
           Create a trading game between you traders and see who's the expert
         </h2>
       </div>
