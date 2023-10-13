@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Robotowght@900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+    overflow-x: hidden;
+  }
+  html::-webkit-scrollbar {
+    width: 9px;
+  }
+  html::-webkit-scrollbar-track {
+    @apply bg-slate-300;
+  }
+
+  html::-webkit-scrollbar-thumb {
+    @apply bg-secondary;
+  }
+  body {
+    @apply bg-slate-200 font-Theading;
+  }
+
+  ::selection {
+    @apply bg-lavender;
+  }
+  .main {
+    @apply min-h-screen;
+  }
+
+  .section {
+    @apply max-w-7xl mx-auto  px-4 py-8;
+  }
+
+  .bg-section {
+    background: linear-gradient(to top, #3204fdba, #c0a9f3cc),
+      url("./assets//trading-bg.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  h1 {
+    @apply font-Theading font-bold text-center my-6;
+  }
+
+  img {
+    @apply drop-shadow-2xl;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  p {
+    @apply font-Tparagraph;
+  }
+
+  button {
+    @apply hover:opacity-80 duration-500;
+  }
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .list > li > a {
+    @apply hover:text-secondary duration-300;
+  }
+}
