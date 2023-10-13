@@ -13,7 +13,6 @@ type ListProps = {
 
 const Header = () => {
   const [isMenu, setIsMenu] = useState(false);
-  const [isScroll, setIsScroll] = useState(false);
   const [showTopButton, setShowTopButton] = useState(false);
 
   const scrollToTop = () => {
@@ -23,14 +22,13 @@ const Header = () => {
   };
 
   const handleScroll = () => {
-    if (window.scrollY > 100) setIsScroll(true);
-    else setIsScroll(false);
     if (window.scrollY > 500) setShowTopButton(true);
     else setShowTopButton(false);
   };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -58,7 +56,9 @@ const Header = () => {
     ));
   };
   return (
-    <header className="flex justify-between px-2  h-[8vh] md:h-[9vh] lg:h-[11vh]  md:px-4 bg-primary    ">
+    <header
+      className={` sticky inset-0 z-50 flex justify-between px-2  h-[8vh] md:h-[9vh] lg:h-[11vh]  md:px-4 bg-primary   `}
+    >
       <Logo component="header" />
 
       {/* Mobile nav */}
@@ -94,7 +94,7 @@ const Header = () => {
 
       {showTopButton && (
         <button
-          className={`fixed bottom-10 right-4 lg:right-8 text-4xl  text-secondary z-20 drop-shadow-lg   hover:text-lightgray `}
+          className={`fixed bottom-10 right-4 lg:right-8 text-4xl  text-secondary z-40 drop-shadow-lg   hover:text-lightgray `}
           onClick={scrollToTop}
         >
           <BsFillArrowUpSquareFill />
