@@ -10,7 +10,7 @@ const Home = () => {
       className="   w-full b flex justify-center  items-center  bg-section  "
       id="home"
     >
-      <div className=" w-full px-4 mt-12   lg:mt-24  mb-14 text-white text-center   grid place-items-center  gap-6 md:gap-12   ">
+      <div className=" w-full px-4 mt-8 md:mt-4     lg:mt-24  mb-14 text-white text-center   grid place-items-center  gap-6 md:gap-10   ">
         <motion.h1
           className="font-TLogo font-extrabold  leading-10 text-4xl md:text-6xl lg:text-7xl drop-shadow-lg leading-1oose max-w-[1000px]  "
           variants={textVariant2}
@@ -40,7 +40,7 @@ const Home = () => {
           </button>
         </div>
 
-        <h2 className="   max-w-2xl   font-TLogo font-bold  text-md sm:text-xl  md:text-2xl  mt-12 ">
+        <h2 className="   max-w-2xl   font-TLogo font-bold  text-md sm:text-xl  md:text-2xl  mt-2 ">
           Create a trading game between you traders and see who's the expert
         </h2>
       </div>
