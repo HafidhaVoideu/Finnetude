@@ -7,7 +7,7 @@ const Home = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ ease: "linear", duration: 0.5 }}
-      className="   w-full b flex justify-center  items-center  bg-section  "
+      className=" h-screen w-full b flex justify-center  items-center  bg-section  "
       id="home"
     >
       <div className=" w-full px-4 mt-8 md:mt-4     lg:mt-24  mb-14 text-white text-center   grid place-items-center  gap-6 md:gap-10   ">
